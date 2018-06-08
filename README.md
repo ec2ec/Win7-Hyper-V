@@ -16,7 +16,7 @@
 
 5. 改变cscript的运行方式，因为HVRemote工具无法在系统默认的WScript 模式下执行。
 
-    在命令提示符中运行`HVRemote /AnonDCOM:grant`命令。
+     在命令提示符中运行`HVRemote /AnonDCOM:grant`命令。
 
 6. 使用CMDKEY命令，将能连接到Hyper-V服务的账号和密码存储在本地。
 
