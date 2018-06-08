@@ -10,18 +10,20 @@
 
 2. 下载HVRemote.wsf脚本
 
-3. 下载完毕后，将hvremote.wsf存放至本地目录
+3. 下载完毕后，将hvremote.wsf存放至本地目录（例如：d:\hvremote.wsf）
 
 4. 以管理员身份运行cmd.exe。
 
 5. 改变cscript的运行方式，因为HVRemote工具无法在系统默认的WScript 模式下执行。
 
-     在命令提示符中运行`HVRemote /AnonDCOM:grant`命令。
+     在命令提示符中运行 `cscript //h:cscript` >> 完成提示：`目前设定的默认脚本宿主是 “cscript.exe”`
+
+     在命令提示符中运行 `d:\HVRemote /AnonDCOM:grant`命令。
 
 6. 使用CMDKEY命令，将能连接到Hyper-V服务的账号和密码存储在本地。
 
-     格式为：cdmkey /add:服务器名   /user:用户名   /pass:密码   
-     cmdkey /list 查看密码是否已存储。
+     格式为：`cdmkey /add:服务器名   /user:用户名   /pass:密码`
+     `cmdkey /list` 查看密码是否已存储。
 
 7. 在Hosts文件中，添加Hyper-V服务器主机名与IP地址的映射。
 
