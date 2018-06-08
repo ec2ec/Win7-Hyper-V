@@ -15,7 +15,7 @@
 4. 以管理员身份运行cmd.exe。
 
 5. 改变cscript的运行方式，因为HVRemote工具无法在系统默认的WScript 模式下执行。
-   在命令提示符中运行`HVRemote /AnonDCOM:grant`命令。
+    在命令提示符中运行`HVRemote /AnonDCOM:grant`命令。
 
 6. 使用CMDKEY命令，将能连接到Hyper-V服务的账号和密码存储在本地。
 
@@ -24,4 +24,7 @@
 
 7. 在Hosts文件中，添加Hyper-V服务器主机名与IP地址的映射。
 
+
+### 注意：
+1. 在调用hvremote.wsf时候，杀毒软件可能会阻止，需要做相应处理。
 
